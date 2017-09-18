@@ -49,24 +49,28 @@ int main() {
                     <<endl;
 
     cout<<"short "<< sizeof(short)
+            << "("
             <<numeric_limits<short>::min()
             <<";"
             <<numeric_limits<short>::max()
             <<")\n"
             <<endl;
     cout<<"unsigned short "<<  sizeof(unsigned short)
-            <<numeric_limits<unsigned short>::min()
+            << "("
+        <<numeric_limits<unsigned short>::min()
             <<";"
             <<numeric_limits<unsigned short>::max()
             <<")\n"
             <<endl;
     cout<<"long "<<  sizeof(long)
-            <<numeric_limits<long>::min()
+            << "("
+        <<numeric_limits<long>::min()
             <<";"
             <<numeric_limits<long>::max()
             <<")\n"
             <<endl;
     cout<<"long long "<<  sizeof(long long)
+            << "("
         <<numeric_limits<long long>::min()
                       <<";"
                       <<numeric_limits<long long>::max()
@@ -74,36 +78,39 @@ int main() {
                       <<endl;
 
     cout<<"long double "<<  sizeof(long double)
+            << "("
             <<numeric_limits<long double>::min()
             <<";"
             <<numeric_limits<long double>::max()
             <<")\n"
             <<endl;
     cout<<"unsigned long long "<<  sizeof(unsigned long long)
+            << "("
             <<numeric_limits<unsigned long long>::min()
             <<";"
             <<numeric_limits<unsigned long long>::max()
             <<")\n"
             <<endl;
     cout<<"float "<<  sizeof(float)
+            << "("
             <<numeric_limits<float>::min()
             <<";"
             <<numeric_limits<float>::max()
             <<")\n"
             <<endl;
     cout<<"double "<<  sizeof(double)
-            <<numeric_limits<double>::min()
+            << "("
+        <<numeric_limits<double>::min()
             <<";"
             <<numeric_limits<double>::max()
             <<")\n"
             <<endl;
     cin.get();
     return 0;
+
 }
 '''
 bool 1(0;1)
-
-unsigned char 1(0;255)bool 1(0;1)
 
 unsigned char 1(0;255)
 
@@ -115,43 +122,19 @@ char32_t 4(0;4294967295)
 
 wchar_t 4(-2147483648;2147483647)
 
-short 2-32768;32767)
+short 2(-32768;32767)
 
-unsigned short 20;65535)
+unsigned short 2(0;65535)
 
-long 8-9223372036854775808;9223372036854775807)
+long 8(-9223372036854775808;9223372036854775807)
 
-long long 8-9223372036854775808;9223372036854775807)
+long long 8(-9223372036854775808;9223372036854775807)
 
-long double 163.3621e-4932;1.18973e+4932)
+long double 16(3.3621e-4932;1.18973e+4932)
 
-unsigned long long 80;18446744073709551615)
+unsigned long long 8(0;18446744073709551615)
 
-float 41.17549e-38;3.40282e+38)
+float 4(1.17549e-38;3.40282e+38)
 
-double 82.22507e-308;1.79769e+308)
-
-signed char 1(-128;127)
-
-char16_t 2(0;65535)
-
-char32_t 4(0;4294967295)
-
-wchar_t 4(-2147483648;2147483647)
-
-short 2-32768;32767)
-
-unsigned short 20;65535)
-
-long 8-9223372036854775808;9223372036854775807)
-
-long long 8-9223372036854775808;9223372036854775807)
-
-long double 163.3621e-4932;1.18973e+4932)
-
-unsigned long long 80;18446744073709551615)
-
-float 41.17549e-38;3.40282e+38)
-
-double 82.22507e-308;1.79769e+308)
+double 8(2.22507e-308;1.79769e+308)
 '''
